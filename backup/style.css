@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("fundo.png");
+    background-color: rgba(0, 240, 15, 10);
+}
+
+.site {
+    min-height: 100%;
+    display: grid;
+    /*grid-template-columns: 2fr 2fr;*/
+    grid-template-columns: auto;
+    grid-template-rows: 20vh 1fr 20vh;
+    grid-template-areas: "header header"
+        "main main"
+        "footer footer"
+}
+
+header {
+    background-color: #ced2b1;
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    background-color: #ced2b1;
+    grid-area: footer;
+}
+
+.logo {
+    margin: 10px;
+    padding: 100px;
+    padding-left: 300px;
+    margin-left: 100px;
+    right: 200px;
+    align-content: space-evenly;
+justify-content: space-evenly;
+}
+img {
+    align-items: center;
+    justify-items: center;
+    width: 50%;
+    height: 100%;
+}
