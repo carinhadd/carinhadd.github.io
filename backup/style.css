@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
 
 body,
 html {
@@ -7,8 +7,12 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url("fundo.png");
-    background-color: rgba(0, 240, 15, 10);
+    background: rgba(206, 210, 177, 0.8) url("fundo.png");
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1920px;
+    max-height: 1080px;
 }
 
 .site {
@@ -16,15 +20,16 @@ html {
     display: grid;
     /*grid-template-columns: 2fr 2fr;*/
     grid-template-columns: auto;
-    grid-template-rows: 20vh 1fr 20vh;
-    grid-template-areas: "header header"
-        "main main"
-        "footer footer"
+    grid-template-rows: 10vh 1fr 10vh;
+    grid-template-areas: "header header header"
+        "main main main"
+        "footer footer footer"
 }
 
 header {
     background-color: #ced2b1;
     grid-area: header;
+    grid-template-rows: 30vw;
 }
 
 main {
@@ -34,20 +39,160 @@ main {
 footer {
     background-color: #ced2b1;
     grid-area: footer;
+    grid-template-rows: 30vw;
 }
 
 .logo {
-    margin: 10px;
+	/*telas maiores que 1366x768 não precisam do width e do height com valores tão baixos*/
+    width:400px;
+    height:400px;
+    position: fixed;
+    display: flex;
+    margin: -40px;
     padding: 100px;
-    padding-left: 300px;
-    margin-left: 100px;
-    right: 200px;
-    align-content: space-evenly;
-justify-content: space-evenly;
+    padding-left: 400px;
+    margin-left: 120px;
+    left: 30px;
+    bottom: 240px;
 }
 img {
-    align-items: center;
-    justify-items: center;
-    width: 50%;
+    max-height: 1080px;
+    max-width: 1920px;
+    width: calc((100%-400/2));
     height: 100%;
+    top: 400px;
+    
+}
+.botoes{
+    align-content: center;
+    justify-content: center;
+    position: fixed;
+}
+.botoes > ul{
+    max-height:1080px;
+    max-width:1920px;
+    color: #442E1F;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+	left: 500px;
+    /*right: -390px;
+    /*top: 350px;*/
+     top: 560px;
+	 bottom: 80px;
+    list-style: none;
+}
+.explorar{
+    border: 2px solid #C3AE8B;
+    border-radius: 40px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #F8f6f4;
+}
+.pesquisar{
+    border: 2px solid #C3AE8B;
+    border-radius: 40px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #F8f6f4;
+}
+.apoie{
+  align-content: center;
+    border: 2px solid #C3AE8B;
+    border-radius: 40px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #F8f6f4;
+}
+a{
+  text-decoration: none;
+    color: #442E1F;
+}
+.explorar:hover{
+    border: 2px solid #C3AE8B;
+    border-radius: 40px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 60px;
+    padding-right: 60px;
+    color: #F8f6f4;
+    background-color: #442E1F;
+}
+.pesquisar:hover{
+    border: 2px solid #C3AE8B;
+    border-radius: 40px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 60px;
+    padding-right: 60px;
+    color: #F8f6f4;
+    background-color: #442E1F;
+}
+.apoie:hover{
+    border: 2px solid #C3AE8B;
+    border-radius: 40px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 60px;
+    padding-right: 60px;
+    color: #F8f6f4;
+    background-color: #442E1F;
+}
+.menuzito{
+    position: relative;
+    top: -90px;
+    font-size: 60px;
+    color: #9ba785;
+    margin-left: 24px;
+}
+.bi-list:hover{
+    color: #442E1F;
+}
+.menu{
+    background-color: #76583D;
+    height: 780px; 
+    width: 300px;
+    top: -4px;
+    position: relative;
+    border-radius: 10px;
+    padding: 0; 
+    margin: 0;
+}
+.lateral{
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+.item1{
+    margin: 0;
+    padding: 0;
+    padding-left: 60px;
+    top: -60px;
+    position: relative; 
+    color: #F8f6f4;
+    right: 30px;
+    font-size: 30px;
+}
+.item2{
+    font-size: 50px;
+    align-content: center;
+    color: #f8f6f4;
+    padding: 0;
+    margin: 0;
+    right: 100px;
+    position: relative;
 }

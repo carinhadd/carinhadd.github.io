@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
 
 body,
 html {
@@ -7,7 +7,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: rgba(206, 210, 177, 0.8) url("imagens/fundo.png");
+    background: rgba(206, 210, 177, 0.8) url("fundo.png");
     background-position: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -43,23 +43,24 @@ footer {
 }
 
 .logo {
+	/*telas maiores que 1366x768 não precisam do width e do height com valores tão baixos*/
     width:400px;
-    height:200px;
+    height:400px;
     position: fixed;
     display: flex;
     margin: -40px;
     padding: 100px;
-    padding-left: 300px;
+    padding-left: 400px;
     margin-left: 120px;
     left: 30px;
-    bottom: 210px;
+    bottom: 240px;
 }
 img {
     max-height: 1080px;
     max-width: 1920px;
     width: calc((100%-400/2));
     height: 100%;
-    top: 200px;
+    top: 400px;
     
 }
 .botoes{
@@ -72,14 +73,17 @@ img {
     max-width:1920px;
     color: #442E1F;
     font-family: Montserrat, sans-serif;
-    font-size: 16px;
+    font-size: 30px;
     position: relative;
     display: flex;
     justify-content: center;
     align-content: center;
     gap: 20px;
-    right: -390px;
-    top: 350px;
+	left: 500px;
+    /*right: -390px;
+    /*top: 350px;*/
+     top: 560px;
+	 bottom: 80px;
     list-style: none;
 }
 .explorar{
@@ -87,8 +91,8 @@ img {
     border-radius: 40px;
     padding-top: 3px;
     padding-bottom: 3px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
     background-color: #F8f6f4;
 }
 .pesquisar{
@@ -97,17 +101,18 @@ img {
     text-align: center;
     padding-top: 3px;
     padding-bottom: 3px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
     background-color: #F8f6f4;
 }
 .apoie{
+  align-content: center;
     border: 2px solid #C3AE8B;
     border-radius: 40px;
     padding-bottom: 3px;
     padding-top: 3px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
     background-color: #F8f6f4;
 }
 a{
@@ -120,8 +125,8 @@ a{
     text-align: center;
     padding-top: 3px;
     padding-bottom: 3px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
     color: #F8f6f4;
     background-color: #442E1F;
 }
@@ -131,8 +136,8 @@ a{
     text-align: center;
     padding-top: 3px;
     padding-bottom: 3px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
     color: #F8f6f4;
     background-color: #442E1F;
 }
@@ -142,15 +147,15 @@ a{
     text-align: center;
     padding-top: 3px;
     padding-bottom: 3px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
     color: #F8f6f4;
     background-color: #442E1F;
 }
 .menuzito{
     position: relative;
-    top: -55px;
-    font-size: 40px;
+    top: -90px;
+    font-size: 60px;
     color: #9ba785;
     margin-left: 24px;
 }
@@ -159,18 +164,18 @@ a{
 }
 .menu{
     background-color: #76583D;
-    height: 550px; 
-    width: 200px;
+    height: 780px; 
+    width: 300px;
     top: -4px;
     position: relative;
     border-radius: 10px;
     padding: 0; 
     margin: 0;
 }
-menu > ul.lateral{
+.lateral{
     list-style: none;
     display: flex;
-    gap: 0px;
+    gap: 5px;
 }
 .item1{
     margin: 0;
@@ -180,14 +185,14 @@ menu > ul.lateral{
     position: relative; 
     color: #F8f6f4;
     right: 30px;
+    font-size: 30px;
 }
 .item2{
-    font-size: 30px;
-    margin: 0;
+    font-size: 50px;
+    align-content: center;
+    color: #f8f6f4;
     padding: 0;
-    left: -80px;
-    top: -40px;
+    margin: 0;
+    right: 100px;
     position: relative;
-    color: #F8f6f4;
-    right: 30px;
 }
