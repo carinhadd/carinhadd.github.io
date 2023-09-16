@@ -8,6 +8,7 @@
     <link rel="stylesheet" href=
     "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <script type='text/javascript' src='js.js'></script>
 </head>
 <body>
     <!--  <img id='fundo' src='fundo.png'>-->
@@ -18,27 +19,27 @@
             'algum texto aqui. Arte por tefy'></div>
             <div class='botoes'>
                 <ul>
-                    <a href='explorar.html'></a>
-                    <li class='explorar'>explorar</li><a href=
-                    "pesquisa.html"></a>
-                    <li class='pesquisar'>pesquisa</li><a title=
-                    'e o pix?, nada ainda?' href='pix.html'></a>
-                    <li class='apoie'>apoie</li>
+                    <a href='explore.html'><li class='explorar'>explorar</li></a>
+                    <a href='lupinha.html'><li class='pesquisar'>pesquisa</li></a>
+                    <a href='# <!--animação com js-->'><li class='apoie'>apoie</li></a>
                 </ul>
-            </div>
-            <div class='menu'>
-                <div class='menuzito'>
-                    <i class='bi bi-list'></i>
+				</div>
+
+                
+			<nav class="menu">
+                <div class="menuzito">
+                    <i  class='bi bi-list' id="abrirMenu" onclick="abrirCoisa()"></i>
                 </div>
-                <ul class='lateral'>
+                <ul class='lateral' id="lateral">
+                    <li class='item0'><i class="bi bi-circle-fill"></i></li>
+                    <li class='item0' id='x' onclick="fecharCoisa()"><i class="bi bi-x"></i></li>
                     <li class='item1'>menu</li>
                     <li class='item2'>.</li>
                     <li class='item2'>.</li>
                     <li class='item2'>.</li>
                 </ul>
-            </div>
+            </nav>
         </main>
         <footer></footer>
-    </div>
-</body>
+    </div> </body>
 </html>
