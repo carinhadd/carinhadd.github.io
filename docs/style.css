@@ -1,5 +1,4 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
-
 body,
 html {
     width: 100%;
@@ -7,19 +6,20 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: rgba(206, 210, 177, 0.8) url("fundo.png");
-    background-position: fixed;
+    background: rgba(206, 210, 177, 0.8) url("../imagens/fundo.png");
+    background-position: relative;
     background-size: cover;
     background-repeat: repeat;
     max-height: 1080px;
     overflow-y: hidden;
+    cursor: rgba(0,0,0, 0.5);
 }
 
 .site {
     display: grid;
     /*grid-template-columns: 2fr 2fr 2fr;*/
     grid-template-columns: auto;
-    grid-template-rows: 10vh 80vh 20vh;
+    grid-template-rows: 10vh 80vh 30vh;
     grid-template-areas: "header header header"
         "main main main"
         "footer footer footer"
@@ -40,8 +40,6 @@ footer {
     position: relative;
     background-color: rgb(206, 210, 177, 0.8);
     grid-area: footer;
-    grid-row-start: 3;
-    grid-row-end: 4;
 }
 
 .logo {
@@ -71,8 +69,7 @@ footer {
     justify-content: center;
     align-content: center;
     gap: 20px;
-	left: 530px;
-    right: -390px;
+	left: 470px;
     top: 550px;
     list-style: none;
 }
@@ -141,6 +138,7 @@ a{
     padding-right: 80px;
     color: #F8f6f4;
     background-color: #C3AE8B;
+    cursor: pointer;
 }
 .menuzito{
     position: relative;
@@ -163,12 +161,13 @@ a{
     padding: 0; 
     margin: 0;
     overflow-x: hidden;
-    overflow-y: hiddden;
+    overflow-y: hidden;
 }
 .lateral{
     list-style: none;
     display: flex;
     gap: 5px;
+
 }
 .item0{
   /*  position: relative;
@@ -217,4 +216,55 @@ a{
 .bi-x:hover{
     cursor: pointer;
     color: #f8f6f4;
+}
+#apoieMenu{
+    display: flex;
+    background-color: #76583D;
+    height: 0px;
+    widht: 0px;
+    margin-left: 800px;
+    margin-right: 800px;
+    position: fixed;
+    left: 700px;
+    top: 400px;
+    border-radius: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    gap: 20px;
+}
+#apoieMenu > ul{
+    position: relative;
+    align-self: center;
+    list-style: none;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    top: -110px;
+    margin: 10px;
+    padding: 0;
+    left: 0;
+    color: #f8f6f4;
+}
+#apoieMenu ul li > p{
+    position: relative;
+    top: 40px;
+}
+.pix{
+position: relative;
+top: 30px;
+color: rgba(0,0,0,1);
+}
+#circulo2{
+    font-size: 30px;
+    color: #9f8562;
+    position: relative;
+    top: -100px;
+    left: 340px;
+}
+#x2{
+    font-size: 30px;
+    position: relative;
+    top: -136px;
+    left: 340px;
+    color: #76583D;
+
 }
