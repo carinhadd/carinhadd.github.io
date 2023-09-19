@@ -38,7 +38,7 @@ main {
 
 footer {
     position: relative;
-    background-color: rgb(206, 210, 177, 0.8);
+    background-color: rgb(206, 210, 177,0.7);
     grid-area: footer;
 }
 
@@ -267,4 +267,62 @@ color: rgba(0,0,0,1);
     left: 340px;
     color: #76583D;
 
+}
+.linhazita1{
+    position: fixed;
+    transform: rotate(90deg);
+    background-color: rgba(159, 133, 98,1);
+    right: 1500px;
+    width: 800px;
+    height: 0.2rem;
+    top: 420px;
+
+}
+#microlinha{
+    position: fixed;
+    transform: rotate(180deg);
+    background-color: rgba(159,133,98,1);
+    right: 1897px;
+    width: 8px;
+    height: 0.2rem;
+    top: 20px;
+
+}
+#microlinha2{
+    position: fixed;
+    transform: rotate(180deg);
+    background-color: rgba(159,133,98,1);
+    right: 1897px;
+    width: 8px;
+    height: 0.2rem;
+    top: 820px;
+}
+.linhazita2{
+    position: fixed;
+    transform: rotate(90deg);
+    background-color: rgba(159,133,98,1);
+    left: 1500px;
+    width: 800px;
+    height: 0.2rem;
+    top: 420px;
+
+}
+#microlinha3{
+    position: fixed;
+    transform: rotate(180deg);
+    background-color: rgba(159,133,98,1);
+    left: 1896px;
+    width: 8px;
+    height: 0.2rem;
+    top: 20px;
+
+}
+#microlinha4{
+    position: fixed;
+    transform: rotate(180deg);
+    background-color: rgba(159,133,98,1);
+    left: 1897px;
+    width: 8px;
+    height: 0.2rem;
+    top: 820px;
 }
